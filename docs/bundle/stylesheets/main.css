@@ -1,0 +1,72 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.9em;
+}
+body a {
+  color: #40a9ff;
+  text-decoration: none !important;
+}
+body .highlight {
+  position: relative;
+  display: block;
+  overflow-x: auto;
+  color: #333;
+  background: #f8f8f8;
+  margin-bottom: 1.25rem;
+  border-radius: 0.25rem;
+}
+body .highlight pre {
+  margin: 0;
+  padding: 0;
+}
+body .selected-left {
+  border-left: solid 3px #cbcbcb !important;
+  border-radius: 0;
+  color: #cbcbcb !important;
+}
+body .btn-no-decoration {
+  text-align: start;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  font: inherit;
+  cursor: pointer;
+  outline: non;
+}
+body .btn-no-decoration:hover {
+  border-radius: 0.25rem;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body .btn-no-decoration:focus {
+  outline: inherit;
+}
+body #navbar-xs,
+body #navbar-md {
+  min-height: 60px;
+  background: #ffb8b0;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body #navbar-md {
+  height: 60px;
+}
+body #navbar-xs #navbar-xs-button {
+  height: 60px;
+}
+body #stage,
+body #sider {
+  min-height: 500px;
+}
+body #stage #stage-edit-link,
+body #sider #stage-edit-link {
+  font-size: 0.85rem;
+}
+body #footer {
+  font-size: 0.85rem;
+}
+body #logo {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
