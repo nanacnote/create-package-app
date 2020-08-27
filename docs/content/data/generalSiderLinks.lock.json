@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "name": "Getting Started",
+      "ref": "gettingStartedContent"
+    },
+    {
+      "name": "Change Logs",
+      "ref": "changeLogsContent"
+    },
+    {
+      "name": "Demos",
+      "ref": "demosContent"
+    }
+  ]
+}

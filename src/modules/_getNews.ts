@@ -1,3 +1,8 @@
+/**
+ *  Parameters type declarations
+ *
+ *  @internal
+ */
 export type TNews =
   | {
       newsToday: string[];
@@ -8,6 +13,8 @@ export type TNews =
 
 /**
  * Function to get new items
+ *
+ * @internal
  * @function
  * @returns object
  */

@@ -10,6 +10,8 @@
 
 /**
  * Function to get new items
+ *
+ * @internal
  * @function
  * @returns object
  */
@@ -34,7 +36,7 @@ var _Directory = /** @class */ (function () {
     /**
      * Main class object for findOut library
      * @class
-     * @param {TParams} options determines how to interact with the API
+     * @param options determines how to interact with the API
      */
     function _Directory(options) {
         var _a, _b, _c;

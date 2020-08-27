@@ -1,3 +1,8 @@
+/**
+ *  Parameters type declarations
+ *
+ *  @internal
+ */
 export declare type TNews = {
     newsToday: string[];
     newsWeek: string[];
@@ -5,6 +10,8 @@ export declare type TNews = {
 } | undefined;
 /**
  * Function to get new items
+ *
+ * @internal
  * @function
  * @returns object
  */

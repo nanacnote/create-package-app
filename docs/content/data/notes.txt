@@ -1,0 +1,11 @@
+custom links generallinks json insertion
+
+"custom": {
+    "header": "",
+    "items": [
+        {
+            "name": "",
+            "ref": ""
+        }
+    ]
+}

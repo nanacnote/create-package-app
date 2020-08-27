@@ -1,5 +1,6 @@
 /**
  *  Parameters type declarations
+ *  @internal
  */
 export declare type TParams = {
     options: {
@@ -15,7 +16,7 @@ export declare class _Directory {
     /**
      * Main class object for findOut library
      * @class
-     * @param {TParams} options determines how to interact with the API
+     * @param options determines how to interact with the API
      */
     constructor(options: TParams["options"]);
     /**

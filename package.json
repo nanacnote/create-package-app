@@ -12,7 +12,6 @@
     "rollup-watch": "rollup -cw",
     "grunt-watch": "grunt watch",
     "grunt-connect": "grunt connect",
-    "docs-build": "node docs/scripts/builder/builder.lock.js",
     "dev": "rollup -cw & grunt watch & grunt connect"
   },
   "repository": {
@@ -50,6 +49,8 @@
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-run": "^0.8.1",
+    "grunt-typedoc": "^0.2.4",
     "handlebars": "^4.7.6",
     "jest": "^26.4.2",
     "rollup": "^2.26.4",
@@ -57,6 +58,7 @@
     "rollup-plugin-typescript2": "^0.27.2",
     "sass": "^1.26.10",
     "tslib": "^2.0.1",
+    "typedoc": "^0.18.0",
     "typescript": "^3.9.7"
   },
   "dependencies": {}

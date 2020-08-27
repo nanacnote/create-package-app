@@ -2,6 +2,7 @@ import { TNews, _getNews } from "./_getNews";
 
 /**
  *  Parameters type declarations
+ *  @internal
  */
 export type TParams = {
   options: {
@@ -19,7 +20,7 @@ export class _Directory {
   /**
    * Main class object for findOut library
    * @class
-   * @param {TParams} options determines how to interact with the API
+   * @param options determines how to interact with the API
    */
   constructor(options: TParams["options"]) {
     this._options = options;

@@ -1,0 +1,381 @@
+{
+	"id": 0,
+	"name": "create-package-app - v1.0.0",
+	"kind": 0,
+	"flags": {},
+	"originalName": "create-package-app",
+	"children": [
+		{
+			"id": 14,
+			"name": "\"_Directory\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/workspaces/create-package-app/src/modules/_Directory.ts",
+			"children": [
+				{
+					"id": 15,
+					"name": "_Directory",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 21,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Main class object for findOut library"
+							},
+							"signatures": [
+								{
+									"id": 22,
+									"name": "new _Directory",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Main class object for findOut library"
+									},
+									"parameters": [
+										{
+											"id": 23,
+											"name": "options",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"comment": {
+												"shortText": "determines how to interact with the API\n"
+											},
+											"type": {
+												"type": "indexedAccess",
+												"indexType": {
+													"type": "stringLiteral",
+													"value": "options"
+												},
+												"objectType": {
+													"type": "reference",
+													"name": "TParams"
+												}
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 15,
+										"name": "_Directory"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "_Directory.ts",
+									"line": 18,
+									"character": 41
+								}
+							]
+						},
+						{
+							"id": 20,
+							"name": "newsMonth",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "_Directory.ts",
+									"line": 18,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						},
+						{
+							"id": 18,
+							"name": "newsToday",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "_Directory.ts",
+									"line": 16,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						},
+						{
+							"id": 19,
+							"name": "newsWeek",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "_Directory.ts",
+									"line": 17,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									},
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									}
+								]
+							}
+						},
+						{
+							"id": 24,
+							"name": "numberIn",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 25,
+									"name": "numberIn",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isPublic": true,
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "gets number of selected category item in a region",
+										"returns": "number\n",
+										"tags": [
+											{
+												"tag": "method",
+												"text": ""
+											}
+										]
+									},
+									"parameters": [
+										{
+											"id": 26,
+											"name": "param",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "union",
+												"types": [
+													{
+														"type": "stringLiteral",
+														"value": "ENGLAND"
+													},
+													{
+														"type": "stringLiteral",
+														"value": "WALES"
+													},
+													{
+														"type": "stringLiteral",
+														"value": "SCOTLAND"
+													},
+													{
+														"type": "stringLiteral",
+														"value": "NORTHEN IRELAND"
+													}
+												]
+											}
+										}
+									],
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "unknown",
+												"name": "100"
+											},
+											{
+												"type": "unknown",
+												"name": "35"
+											},
+											{
+												"type": "unknown",
+												"name": "75"
+											},
+											{
+												"type": "unknown",
+												"name": "50"
+											},
+											{
+												"type": "unknown",
+												"name": "98"
+											},
+											{
+												"type": "unknown",
+												"name": "10"
+											},
+											{
+												"type": "unknown",
+												"name": "43"
+											},
+											{
+												"type": "unknown",
+												"name": "27"
+											}
+										]
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "_Directory.ts",
+									"line": 39,
+									"character": 17
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								21
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								20,
+								18,
+								19
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								24
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "_Directory.ts",
+							"line": 13,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						15
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "_Directory.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "\"_getNews\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/workspaces/create-package-app/src/modules/_getNews.ts",
+			"sources": [
+				{
+					"fileName": "_getNews.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"kind": 1,
+			"children": [
+				14,
+				1
+			]
+		}
+	]
+}

@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         "docs/scripts/**.*",
         "docs/stylesheets/**.*",
       ],
-      tasks: ["jshint", "browserify", "sass"],
+      tasks: ["typedoc", "run", "jshint", "browserify", "sass"],
     },
     connect: {
       server: {
@@ -25,6 +25,35 @@ module.exports = function (grunt) {
           open: true,
           keepalive: true,
         },
+      },
+    },
+    typedoc: {
+      build: {
+        options: {
+          mode: "modules",
+          module: "commonjs",
+          target: "es5",
+          json: "docs/content/data/typedoc.lock.json",
+          excludePrivate: true,
+          stripInternal: true,
+          name: "<%= pkg.name %>",
+          includeVersion: "<%= pkg.version %>",
+        },
+        src: "src/modules/**.*",
+      },
+    },
+    run: {
+      options: {
+        itterable: true,
+      },
+      target1: {
+        args: ["docs/content/siderLinks/documentationLinks.builder.js"],
+      },
+      target2: {
+        args: ["docs/content/siderLinks/generalLinks.builder.js"],
+      },
+      target3: {
+        args: ["docs/content/siderContents/gettingStartedContent.builder.js"],
       },
     },
     jshint: {
@@ -63,6 +92,8 @@ module.exports = function (grunt) {
   // Load the plugins
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-contrib-connect");
+  grunt.loadNpmTasks("grunt-typedoc");
+  grunt.loadNpmTasks("grunt-run");
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-browserify");
   grunt.loadNpmTasks("grunt-babel");
@@ -71,6 +102,8 @@ module.exports = function (grunt) {
   // Default task(s).
   grunt.registerTask("default", [
     "watch",
+    "typedoc",
+    "run",
     "jshint",
     "browserify",
     "sass",
