@@ -1,39 +1,8 @@
-const builder = require("../../scripts/builder");
-const data = require("../data/typedoc.lock.json");
+const builder = require("../../scripts/builder.lock");
+const data = require("../../scripts/typeDocParser.lock");
 
 (function () {
-  // structure the data from the json file into classes, methods and properties
-  const dataClasses = [];
-  const dataFunctions = [];
-  const dataMethods = [];
-  const dataProperties = [];
-
-  data.children.forEach((e) => {
-    e.children?.forEach((e) => {
-      if (e.kindString === "Class") {
-        dataClasses.push(e);
-        e.children.forEach((e) => {
-          if (e.kindString === "Method") {
-            dataMethods.push(e);
-          }
-          if (e.kindString === "Property") {
-            dataProperties.push(e);
-          }
-        });
-      }
-      if (e.kindString === "Function") {
-        dataFunctions.push(e);
-      }
-    });
-  });
-
-  const context = {
-    classes: dataClasses,
-    methods: dataMethods,
-    properties: dataProperties,
-    functions: dataFunctions,
-  };
-
+  const context = data();
   const source = `
   <div>
     {{#if classes}}

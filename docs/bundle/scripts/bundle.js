@@ -65,8 +65,7 @@ var main = function main(ROOT_URL) {
     if (btnCurrentRef.split("-").length > 1) {
       // if sider item clicked is a prop method or class inject long list of
       // all prop method and class and jump to the clicked items section
-      console.log(btnCurrentRef);
-      $("#stage-content").load("content/siderContents/documentationContent.html#".concat(btnCurrentRef), function () {
+      $("#stage-content").load("content/siderContents/documentationContent.html", function () {
         $("#stage-edit-link>a").attr("href", "".concat(ROOT_URL, "/").concat(pkg.name, "/tree/master/docs/content/siderContents/documentationContent.html")); // adds selected right border styling
 
         $(".btn-no-decoration").removeClass("selected-left");
@@ -153,6 +152,7 @@ module.exports={
     "grunt-run": "^0.8.1",
     "grunt-typedoc": "^0.2.4",
     "handlebars": "^4.7.6",
+    "highlight.js": "^10.1.2",
     "jest": "^26.4.2",
     "rollup": "^2.26.4",
     "rollup-plugin-banner": "^0.2.1",

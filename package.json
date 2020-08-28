@@ -52,6 +52,7 @@
     "grunt-run": "^0.8.1",
     "grunt-typedoc": "^0.2.4",
     "handlebars": "^4.7.6",
+    "highlight.js": "^10.1.2",
     "jest": "^26.4.2",
     "rollup": "^2.26.4",
     "rollup-plugin-banner": "^0.2.1",
