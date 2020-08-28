@@ -1,17 +1,15 @@
 import { TNews, _getNews } from "./_getNews";
 
 /**
- *  Parameters type declarations
- *  @internal
+ * Parameters type declarations
+ * @internal
  */
 export type TParams = {
-  options: {
-    category: "HOSPITALS" | "UNIVERSITIES";
-  };
+  category: "HOSPITALS" | "UNIVERSITIES";
 };
 
-export class _Directory {
-  private _options: TParams["options"];
+export class Directory {
+  private _options: TParams;
   private _news: TNews;
   public newsToday: string[] | undefined;
   public newsWeek: string[] | undefined;
@@ -21,8 +19,9 @@ export class _Directory {
    * Main class object for findOut library
    * @class
    * @param options determines how to interact with the API
+   * @returns {Directory} A new Directory object
    */
-  constructor(options: TParams["options"]) {
+  constructor(options: TParams) {
     this._options = options;
     this._news = _getNews(this._options.category);
     this.newsToday = this._news?.newsToday;

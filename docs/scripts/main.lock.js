@@ -38,9 +38,8 @@ export const main = (ROOT_URL) => {
     if (btnCurrentRef.split("-").length > 1) {
       // if sider item clicked is a prop method or class inject long list of
       // all prop method and class and jump to the clicked items section
-      console.log(btnCurrentRef);
       $("#stage-content").load(
-        `content/siderContents/documentationContent.html#${btnCurrentRef}`,
+        `content/siderContents/documentationContent.html`,
         function () {
           $("#stage-edit-link>a").attr(
             "href",

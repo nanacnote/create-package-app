@@ -32,13 +32,14 @@ var _getNews = function (param) {
     }
 };
 
-var _Directory = /** @class */ (function () {
+var Directory = /** @class */ (function () {
     /**
      * Main class object for findOut library
      * @class
      * @param options determines how to interact with the API
+     * @returns {Directory} A new Directory object
      */
-    function _Directory(options) {
+    function Directory(options) {
         var _a, _b, _c;
         this._options = options;
         this._news = _getNews(this._options.category);
@@ -52,7 +53,7 @@ var _Directory = /** @class */ (function () {
      * @method
      * @returns number
      */
-    _Directory.prototype.numberIn = function (param) {
+    Directory.prototype.numberIn = function (param) {
         var _a, _b;
         if (((_a = this._options) === null || _a === void 0 ? void 0 : _a.category) === "HOSPITALS") {
             switch (param) {
@@ -79,10 +80,10 @@ var _Directory = /** @class */ (function () {
             }
         }
     };
-    return _Directory;
+    return Directory;
 }());
 
-var hospitals = new _Directory({ category: "HOSPITALS" });
-var universities = new _Directory({ category: "UNIVERSITIES" });
+var hospitals = new Directory({ category: "HOSPITALS" });
+var universities = new Directory({ category: "UNIVERSITIES" });
 
 export { hospitals, universities };

@@ -55,6 +55,9 @@ module.exports = function (grunt) {
       target3: {
         args: ["docs/content/siderContents/gettingStartedContent.builder.js"],
       },
+      target4: {
+        args: ["docs/content/siderContents/documentationContent.builder.js"],
+      },
     },
     jshint: {
       files: ["docs/scripts/**.js"],
