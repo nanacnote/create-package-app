@@ -7,17 +7,17 @@
 	"children": [
 		{
 			"id": 14,
-			"name": "\"_Directory\"",
+			"name": "\"Directory\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "/workspaces/create-package-app/src/modules/_Directory.ts",
+			"originalName": "/Users/nana/Desktop/create-package-app/src/modules/Directory.ts",
 			"children": [
 				{
 					"id": 15,
-					"name": "_Directory",
+					"name": "Directory",
 					"kind": 128,
 					"kindString": "Class",
 					"flags": {
@@ -33,19 +33,21 @@
 								"isExported": true
 							},
 							"comment": {
-								"shortText": "Main class object for findOut library"
+								"shortText": "Main class object for findOut library",
+								"returns": "A new Directory object\n"
 							},
 							"signatures": [
 								{
 									"id": 22,
-									"name": "new _Directory",
+									"name": "new Directory",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {
 										"isExported": true
 									},
 									"comment": {
-										"shortText": "Main class object for findOut library"
+										"shortText": "Main class object for findOut library",
+										"returns": "A new Directory object\n"
 									},
 									"parameters": [
 										{
@@ -57,32 +59,25 @@
 												"isExported": true
 											},
 											"comment": {
-												"shortText": "determines how to interact with the API\n"
+												"shortText": "determines how to interact with the API"
 											},
 											"type": {
-												"type": "indexedAccess",
-												"indexType": {
-													"type": "stringLiteral",
-													"value": "options"
-												},
-												"objectType": {
-													"type": "reference",
-													"name": "TParams"
-												}
+												"type": "reference",
+												"name": "TParams"
 											}
 										}
 									],
 									"type": {
 										"type": "reference",
 										"id": 15,
-										"name": "_Directory"
+										"name": "Directory"
 									}
 								}
 							],
 							"sources": [
 								{
-									"fileName": "_Directory.ts",
-									"line": 18,
+									"fileName": "Directory.ts",
+									"line": 16,
 									"character": 41
 								}
 							]
@@ -98,8 +93,8 @@
 							},
 							"sources": [
 								{
-									"fileName": "_Directory.ts",
-									"line": 18,
+									"fileName": "Directory.ts",
+									"line": 16,
 									"character": 18
 								}
 							],
@@ -131,8 +126,8 @@
 							},
 							"sources": [
 								{
-									"fileName": "_Directory.ts",
-									"line": 16,
+									"fileName": "Directory.ts",
+									"line": 14,
 									"character": 18
 								}
 							],
@@ -164,8 +159,8 @@
 							},
 							"sources": [
 								{
-									"fileName": "_Directory.ts",
-									"line": 17,
+									"fileName": "Directory.ts",
+									"line": 15,
 									"character": 17
 								}
 							],
@@ -292,8 +287,8 @@
 							],
 							"sources": [
 								{
-									"fileName": "_Directory.ts",
-									"line": 39,
+									"fileName": "Directory.ts",
+									"line": 38,
 									"character": 17
 								}
 							]
@@ -326,9 +321,9 @@
 					],
 					"sources": [
 						{
-							"fileName": "_Directory.ts",
-							"line": 13,
-							"character": 23
+							"fileName": "Directory.ts",
+							"line": 11,
+							"character": 22
 						}
 					]
 				}
@@ -344,7 +339,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "_Directory.ts",
+					"fileName": "Directory.ts",
 					"line": 1,
 					"character": 0
 				}
@@ -358,7 +353,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "/workspaces/create-package-app/src/modules/_getNews.ts",
+			"originalName": "/Users/nana/Desktop/create-package-app/src/modules/_getNews.ts",
 			"sources": [
 				{
 					"fileName": "_getNews.ts",

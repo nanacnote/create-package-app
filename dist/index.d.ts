@@ -1,3 +1,3 @@
-import { _Directory } from "./modules/_Directory";
-export declare const hospitals: _Directory;
-export declare const universities: _Directory;
+import { Directory } from "./modules/Directory";
+export declare const hospitals: Directory;
+export declare const universities: Directory;

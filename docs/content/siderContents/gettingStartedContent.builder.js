@@ -1,4 +1,4 @@
-const builder = require("../../scripts/builder");
+const builder = require("../../scripts/builder.lock");
 const pkg = require("../../../package.json");
 
 (function () {

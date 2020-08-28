@@ -1,5 +1,5 @@
-import { _Directory } from "./modules/_Directory";
+import { Directory } from "./modules/Directory";
 
-export const hospitals = new _Directory({ category: "HOSPITALS" });
+export const hospitals = new Directory({ category: "HOSPITALS" });
 
-export const universities = new _Directory({ category: "UNIVERSITIES" });
+export const universities = new Directory({ category: "UNIVERSITIES" });
