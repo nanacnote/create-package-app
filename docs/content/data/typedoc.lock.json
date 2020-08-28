@@ -13,7 +13,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "/workspaces/create-package-app/src/modules/_Directory.ts",
+			"originalName": "/Users/nana/Desktop/create-package-app/src/modules/_Directory.ts",
 			"children": [
 				{
 					"id": 15,
@@ -358,7 +358,7 @@
 			"flags": {
 				"isExported": true
 			},
-			"originalName": "/workspaces/create-package-app/src/modules/_getNews.ts",
+			"originalName": "/Users/nana/Desktop/create-package-app/src/modules/_getNews.ts",
 			"sources": [
 				{
 					"fileName": "_getNews.ts",
