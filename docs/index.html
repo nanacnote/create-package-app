@@ -19,15 +19,13 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <!-- Highlight.js styles -->
-    <!-- <link rel="stylesheet" href="/path/to/styles/default.css" /> -->
     <!-- default stylesheet -->
     <link rel="stylesheet" href="bundle/stylesheets/main.css" />
     <title>findOut.js | Hospitals and University directory for UK</title>
   </head>
 
   <body>
-    <div class="container-fluid bg-light">
+    <div class="container-fluid">
       <div class="row">
         <!-- navbar for medium size devices and up -->
         <div class="col p-0 text-white">
@@ -98,9 +96,9 @@
       </div>
       <div class="row">
         <!-- sider menu section -->
-        <div class="col-md-3 p-0">
-          <div id="sider" class="d-none d-md-block">
-            <div class="sticky-top border-right my-5 p-5 h-100">
+        <div class="col-md-3">
+          <div id="sider" class="d-none d-md-block rounded mt-5">
+            <div id="sider-lg-stick" class="border-right p-5">
               <div id="sider-content">
                 <!-- inject general links from handlebars build -->
                 <div id="general-links"></div>
@@ -110,39 +108,31 @@
             </div>
           </div>
         </div>
-        <!-- main content section containing stage for injecting dynamic content -->
+        <!-- footer and main content section containing stage for injecting dynamic content-->
         <div class="col-md-9">
           <div
-            class="w-100 d-flex flex-column justify-content-center align-items-center"
+            class="d-flex flex-column align-items-center justify-content-between mt-5 h-100"
           >
-            <div class="px-2 w-100">
-              <div id="stage" class="bg-white rounded py-5 px-3 my-5">
-                <div id="stage-content"></div>
-                <div id="stage-edit-link" class="text-right mt-5">
-                  <a class="text-info" href="#" referrerpolicy="no-referrer">
-                    Edit this page on GitHub
-                  </a>
-                </div>
+            <!-- stage section -->
+            <div id="stage" class="bg-white rounded w-100 py-5 px-3">
+              <div id="stage-content" class="lead"></div>
+              <div id="stage-edit-link" class="text-right mt-5">
+                <a class="text-info" href="#" referrerpolicy="no-referrer">
+                  Edit this page on GitHub
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <!-- footer section -->
-        <div class="col">
-          <div
-            id="footer"
-            class="mb-3 d-flex flex-column justify-content-center align-items-center"
-          >
-            <div>
-              <span class="library-name"></span><span> by </span>
-              <a href="http://adjei-bohyen.me" referrerpolicy="no-referrer">
-                <span class="library-author"></span>
-              </a>
+            <!-- footer section -->
+            <div id="footer" class="text-center">
+              <div>
+                <span class="library-name"></span><span> by </span>
+                <a href="http://adjei-bohyen.me" referrerpolicy="no-referrer">
+                  <span class="library-author"></span>
+                </a>
+              </div>
+              <div class="library-license"></div>
+              <div class="library-contact"></div>
             </div>
-            <div class="library-license"></div>
-            <div class="library-contact"></div>
           </div>
         </div>
       </div>

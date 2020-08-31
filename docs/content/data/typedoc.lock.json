@@ -6,21 +6,17 @@
 	"originalName": "create-package-app",
 	"children": [
 		{
-			"id": 14,
+			"id": 17,
 			"name": "\"Directory\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
 				"isExported": true
 			},
-<<<<<<< HEAD
-			"originalName": "/Users/nana/Desktop/create-package-app/src/modules/_Directory.ts",
-=======
 			"originalName": "/Users/nana/Desktop/create-package-app/src/modules/Directory.ts",
->>>>>>> master
 			"children": [
 				{
-					"id": 15,
+					"id": 18,
 					"name": "Directory",
 					"kind": 128,
 					"kindString": "Class",
@@ -29,7 +25,7 @@
 					},
 					"children": [
 						{
-							"id": 21,
+							"id": 24,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -38,11 +34,17 @@
 							},
 							"comment": {
 								"shortText": "Main class object for findOut library",
-								"returns": "A new Directory object\n"
+								"returns": "A new Directory object",
+								"tags": [
+									{
+										"tag": "example",
+										"text": "\n const foo = new Directory({category: \"HOSPITALS\"}, 'placeholder')\n// foo\n"
+									}
+								]
 							},
 							"signatures": [
 								{
-									"id": 22,
+									"id": 25,
 									"name": "new Directory",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -51,11 +53,17 @@
 									},
 									"comment": {
 										"shortText": "Main class object for findOut library",
-										"returns": "A new Directory object\n"
+										"returns": "A new Directory object",
+										"tags": [
+											{
+												"tag": "example",
+												"text": "\n const foo = new Directory({category: \"HOSPITALS\"}, 'placeholder')\n// foo\n"
+											}
+										]
 									},
 									"parameters": [
 										{
-											"id": 23,
+											"id": 26,
 											"name": "options",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -69,11 +77,28 @@
 												"type": "reference",
 												"name": "TParams"
 											}
+										},
+										{
+											"id": 27,
+											"name": "another",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true,
+												"isOptional": true
+											},
+											"comment": {
+												"shortText": "just another parameter as a placeholder"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "any"
+											}
 										}
 									],
 									"type": {
 										"type": "reference",
-										"id": 15,
+										"id": 18,
 										"name": "Directory"
 									}
 								}
@@ -87,7 +112,7 @@
 							]
 						},
 						{
-							"id": 20,
+							"id": 23,
 							"name": "newsMonth",
 							"kind": 1024,
 							"kindString": "Property",
@@ -120,7 +145,7 @@
 							}
 						},
 						{
-							"id": 18,
+							"id": 21,
 							"name": "newsToday",
 							"kind": 1024,
 							"kindString": "Property",
@@ -153,7 +178,7 @@
 							}
 						},
 						{
-							"id": 19,
+							"id": 22,
 							"name": "newsWeek",
 							"kind": 1024,
 							"kindString": "Property",
@@ -186,7 +211,7 @@
 							}
 						},
 						{
-							"id": 24,
+							"id": 28,
 							"name": "numberIn",
 							"kind": 2048,
 							"kindString": "Method",
@@ -196,7 +221,7 @@
 							},
 							"signatures": [
 								{
-									"id": 25,
+									"id": 29,
 									"name": "numberIn",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -216,7 +241,7 @@
 									},
 									"parameters": [
 										{
-											"id": 26,
+											"id": 30,
 											"name": "param",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -292,7 +317,7 @@
 							"sources": [
 								{
 									"fileName": "Directory.ts",
-									"line": 38,
+									"line": 42,
 									"character": 17
 								}
 							]
@@ -303,23 +328,23 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								21
+								24
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								20,
-								18,
-								19
+								23,
+								21,
+								22
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								24
+								28
 							]
 						}
 					],
@@ -337,7 +362,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						15
+						18
 					]
 				}
 			],
@@ -358,6 +383,238 @@
 				"isExported": true
 			},
 			"originalName": "/Users/nana/Desktop/create-package-app/src/modules/_getNews.ts",
+			"children": [
+				{
+					"id": 7,
+					"name": "_getNews",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 8,
+							"name": "_getNews",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Function to get new items",
+								"returns": "object\n"
+							},
+							"parameters": [
+								{
+									"id": 9,
+									"name": "institution",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"text": "A union type of either \"HOSPITALS\" or \"UNIVERSITIES\""
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "stringLiteral",
+												"value": "HOSPITALS"
+											},
+											{
+												"type": "stringLiteral",
+												"value": "UNIVERSITIES"
+											}
+										]
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "reflection",
+										"declaration": {
+											"id": 10,
+											"name": "__type",
+											"kind": 65536,
+											"kindString": "Type literal",
+											"flags": {
+												"isExported": true
+											},
+											"children": [
+												{
+													"id": 13,
+													"name": "newsMonth",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true
+													},
+													"sources": [
+														{
+															"fileName": "_getNews.ts",
+															"line": 26,
+															"character": 17
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													"defaultValue": "[\"hospitals news item 1\", \"hospitals news item 2\"]"
+												},
+												{
+													"id": 11,
+													"name": "newsToday",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true
+													},
+													"sources": [
+														{
+															"fileName": "_getNews.ts",
+															"line": 24,
+															"character": 17
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													"defaultValue": "[\"hospitals news item 1\", \"hospitals news item 2\"]"
+												},
+												{
+													"id": 12,
+													"name": "newsWeek",
+													"kind": 32,
+													"kindString": "Variable",
+													"flags": {
+														"isExported": true
+													},
+													"sources": [
+														{
+															"fileName": "_getNews.ts",
+															"line": 25,
+															"character": 16
+														}
+													],
+													"type": {
+														"type": "array",
+														"elementType": {
+															"type": "intrinsic",
+															"name": "string"
+														}
+													},
+													"defaultValue": "[\"hospitals news item 1\", \"hospitals news item 2\"]"
+												}
+											],
+											"groups": [
+												{
+													"title": "Variables",
+													"kind": 32,
+													"children": [
+														13,
+														11,
+														12
+													]
+												}
+											]
+										}
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "_getNews.ts",
+							"line": 20,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 14,
+					"name": "foo",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"comment": {
+						"shortText": "second function"
+					},
+					"signatures": [
+						{
+							"id": 15,
+							"name": "foo",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "second function"
+							},
+							"parameters": [
+								{
+									"id": 16,
+									"name": "arg",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "takes a string the quick brown fox jumps over the lazy dogs\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "_getNews.ts",
+							"line": 44,
+							"character": 16
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						7,
+						14
+					]
+				}
+			],
 			"sources": [
 				{
 					"fileName": "_getNews.ts",
@@ -372,7 +629,7 @@
 			"title": "Modules",
 			"kind": 1,
 			"children": [
-				14,
+				17,
 				1
 			]
 		}
