@@ -17,11 +17,15 @@ export class Directory {
 
   /**
    * Main class object for findOut library
-   * @class
+   *
    * @param options determines how to interact with the API
-   * @returns {Directory} A new Directory object
+   * @param another just another parameter as a placeholder
+   * @returns A new Directory object
+   * @example
+   *  const foo = new Directory({category: "HOSPITALS"}, 'placeholder')
+   * // foo
    */
-  constructor(options: TParams) {
+  constructor(options: TParams, another?: any) {
     this._options = options;
     this._news = _getNews(this._options.category);
     this.newsToday = this._news?.newsToday;

@@ -11,12 +11,11 @@
 /**
  * Function to get new items
  *
- * @internal
- * @function
+ * @param institution A union type of either "HOSPITALS" or "UNIVERSITIES"
  * @returns object
  */
-var _getNews = function (param) {
-    switch (param) {
+function _getNews(institution) {
+    switch (institution) {
         case "HOSPITALS":
             return {
                 newsToday: ["hospitals news item 1", "hospitals news item 2"],
@@ -30,16 +29,20 @@ var _getNews = function (param) {
                 newsMonth: ["university news item 1", "university news item 2"],
             };
     }
-};
+}
 
 var Directory = /** @class */ (function () {
     /**
      * Main class object for findOut library
-     * @class
+     *
      * @param options determines how to interact with the API
-     * @returns {Directory} A new Directory object
+     * @param another just another parameter as a placeholder
+     * @returns A new Directory object
+     * @example
+     *  const foo = new Directory({category: "HOSPITALS"}, 'placeholder')
+     * // foo
      */
-    function Directory(options) {
+    function Directory(options, another) {
         var _a, _b, _c;
         this._options = options;
         this._news = _getNews(this._options.category);

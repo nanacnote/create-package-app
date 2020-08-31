@@ -1,4 +1,4 @@
-const builder = require("../../scripts/builder.lock");
+const templateBuilder = require("../../scripts/templateBuilder.lock");
 const pkg = require("../../../package.json");
 
 (function () {
@@ -20,5 +20,5 @@ const pkg = require("../../../package.json");
 </div>
   `;
 
-  builder(__filename, source, context);
+  templateBuilder(__filename, source, context);
 })();

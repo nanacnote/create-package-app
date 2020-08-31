@@ -13,11 +13,15 @@ export declare class Directory {
     newsMonth: string[] | undefined;
     /**
      * Main class object for findOut library
-     * @class
+     *
      * @param options determines how to interact with the API
-     * @returns {Directory} A new Directory object
+     * @param another just another parameter as a placeholder
+     * @returns A new Directory object
+     * @example
+     *  const foo = new Directory({category: "HOSPITALS"}, 'placeholder')
+     * // foo
      */
-    constructor(options: TParams);
+    constructor(options: TParams, another?: any);
     /**
      * gets number of selected category item in a region
      * @public

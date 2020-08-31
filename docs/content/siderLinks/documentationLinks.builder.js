@@ -1,4 +1,4 @@
-const builder = require("../../scripts/builder.lock");
+const templateBuilder = require("../../scripts/templateBuilder.lock");
 const data = require("../../scripts/typeDocParser.lock");
 
 (function () {
@@ -6,7 +6,7 @@ const data = require("../../scripts/typeDocParser.lock");
   const source = `
   <div>
     {{#if classes}}
-    <div class="px-1 pb-3 pt-5"><strong>CLASSES</strong></div>
+    <div class="px-1 pb-3 pt-5 h5">CLASSES</div>
     <div id="general-sider-links-default">
       {{#each classes}}
         <button
@@ -19,7 +19,7 @@ const data = require("../../scripts/typeDocParser.lock");
     </div>
     {{/if}}
     {{#if functions}}
-      <div class="px-1 pb-3 pt-5"><strong>FUNCTIONS</strong></div>
+      <div class="px-1 pb-3 pt-5 h5">FUNCTIONS</div>
       <div id="general-sider-links-default">
         {{#each functions}}
           <button
@@ -32,7 +32,7 @@ const data = require("../../scripts/typeDocParser.lock");
       </div>
     {{/if}}
     {{#if properties}}
-      <div class="px-1 pb-3 pt-5"><strong>PROPERTIES</strong></div>
+      <div class="px-1 pb-3 pt-5 h5">PROPERTIES</div>
       <div id="general-sider-links-default">
         {{#each properties}}
           <button
@@ -45,7 +45,7 @@ const data = require("../../scripts/typeDocParser.lock");
       </div>
     {{/if}}
     {{#if methods}}
-      <div class="px-1 pb-3 pt-5"><strong>METHODS</strong></div>
+      <div class="px-1 pb-3 pt-5 h5">METHODS</div>
       <div id="general-sider-links-default">
         {{#each methods}}
           <button
@@ -60,5 +60,5 @@ const data = require("../../scripts/typeDocParser.lock");
   </div>
   `;
 
-  builder(__filename, source, context);
+  templateBuilder(__filename, source, context);
 })();
