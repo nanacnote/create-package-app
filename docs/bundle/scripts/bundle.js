@@ -4,7 +4,7 @@ v1.0.0
 CC0-1.0
 by Owusu K
 contributors 
-Typescript ready scaffolding for writing and publishing npm packages. It comes packaged with an automated fully functional documentation website to allow you to focus on your package
+Typescript ready scaffolding for writing and publishing libraries. It comes packaged with an automated & customizable documentation website generator. This allows you to focus on writing code just for your library instead of doing all the other setup stuff.
 https://github.com/nanacnote/create-package-app#readme
  */
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
@@ -101,7 +101,7 @@ exports.main = main;
 module.exports={
   "name": "create-package-app",
   "version": "1.0.0",
-  "description": "Typescript ready scaffolding for writing and publishing npm packages. It comes packaged with an automated fully functional documentation website to allow you to focus on your package",
+  "description": "Typescript ready scaffolding for writing and publishing libraries. It comes packaged with an automated & customizable documentation website generator. This allows you to focus on writing code just for your library instead of doing all the other setup stuff.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",

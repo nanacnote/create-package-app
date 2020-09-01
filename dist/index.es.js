@@ -4,7 +4,7 @@
  * CC0-1.0
  * by Owusu K
  * contributors 
- * Typescript ready scaffolding for writing and publishing npm packages. It comes packaged with an automated fully functional documentation website to allow you to focus on your package
+ * Typescript ready scaffolding for writing and publishing libraries. It comes packaged with an automated & customizable documentation website generator. This allows you to focus on writing code just for your library instead of doing all the other setup stuff.
  * https://github.com/nanacnote/create-package-app#readme
  */
 
