@@ -1,7 +1,13 @@
-# idPlease.js
+# create-package-app
 
-A Javascript library to make getting website visitor's information easy and simple no dependencies and can run both server side and client side.
+Typescript ready scaffolding for writing and publishing libraries. It comes packaged with an automated & customizable documentation website generator. This allows you to focus on writing code just for your library instead of doing all the other setup stuff.
 
-### Live Demo
+The generated website is configured to be hosted on GitHub pages and seamlessly integrates with your GitHub repo.
 
-[View](https://nanacnote.github.io/idPlease/)
+A Docker file is already included to allow for easy collaboration in containers regardless of local dev setup of collaborators.
+
+Testing is also configured with Jest.
+
+### Live Demo Auto Generated Documentation Website
+
+[View](https://nanacnote.github.io/create-package-app/)
